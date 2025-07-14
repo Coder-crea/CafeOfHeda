@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logoFont {
+  /* font-family: "Playwrite HU", cursive; */
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+}
+.HeadContainer {
+  width: 100%;
+  padding: 15px 9px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  /* position: fixed;
+  z-index: 11;
+  border-radius: 90px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  background-color: floralwhite;
+  padding: 12px 20px;
+  margin-left: 5%; */
+}
+.Logo {
+  width: 40%;
+  justify-self: start;
+  font-family: "Playwrite HU", cursive;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+}
+nav {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+ul {
+  display: none;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  flex-direction: row;
+  margin-top: 12px;
+}
+@media (min-width: 611px) {
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 611px) {
+  .descriptionLogo {
+    display: none;
+  }
+}
+nav > ul > li {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width: 611px) {
+  /* лишнее */
+  nav > ul > li {
+    display: none;
+  }
+}
+@media (min-width: 611px) {
+  nav > i.fa-solid {
+    display: none;
+  }
+}
+
+nav > i.fa-solid {
+  justify-self: end;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+nav > i.fa-solid:active {
+  color: grey;
+}
+
+ul > li {
+  color: rgb(181, 174, 174);
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.link:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Для секции Active */
+/* @media (max-width: 611px) { */
+
+@media (max-width: 611px) {
+  ul.active {
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  ul.active > .link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    border: 1px solid rgb(109, 205, 237);
+    background: rgb(109, 205, 237);
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    padding: 9px 0px;
+    transition: all 0.5s ease-in-out;
+    margin-top: 13px;
+  }
+  .link {
+    color: white;
+  }
+  .link:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  ul.active > li:hover {
+    background: rgb(1, 173, 230);
+  }
+  ul.active > li:active {
+    background: rgb(1, 173, 230);
+  }
+
+  ul.active > li:not(:first-of-type) {
+    margin-top: 12px;
+  }
+}
+
+.logoContainer {
+  position: relative;
+  margin-left: 5px;
+  /* background-color: aqua; */
+}
+.descriptionLogo {
+  font-size: 15px;
+  font-family: "Lora", serif;
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  width: 125px;
+  color: rgb(4, 207, 4);
+  /* background: red; */
+}
+.descriptionLogo2 {
+  font-size: 13px;
+  font-family: "Lora", serif;
+  position: absolute;
+  top: -2%;
+  left: 70%;
+  color: rgb(4, 207, 4);
+}
+.LogoText {
+  display: flex;
+}
+.LogoTextFooter {
+  justify-content: center;
+}
+.IconLogo {
+  font-size: 35px;
+  color: rgb(4, 207, 4);
+}
+@media (max-width: 403px) {
+  .IconLogo {
+    display: none;
+  }
+  .logoContainer {
+    margin-left: 0px;
+    /* background-color: aqua; */
+  }
+}

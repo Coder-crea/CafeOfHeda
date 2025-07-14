@@ -1,0 +1,14 @@
+.PreviewTextMenu {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.description {
+  font-family: "Montserrat", sans-serif;
+}
+.clicksMenu {
+  cursor: pointer;
+}

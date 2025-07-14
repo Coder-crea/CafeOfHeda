@@ -1,0 +1,44 @@
+.Awards {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 42px;
+}
+.Awards-Words {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  position: relative;
+  top: -35px;
+}
+
+.ptext {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.pictures > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.pictures > div {
+  width: 100%;
+  height: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.MenuButton {
+  transition: all 0.6s ease;
+}
+.MenuButton:hover {
+  transform: scale(1.2);
+}
+
+.team-section {
+  padding-bottom: 50px;
+}

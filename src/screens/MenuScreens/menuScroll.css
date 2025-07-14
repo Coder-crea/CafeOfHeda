@@ -1,0 +1,41 @@
+.words {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.titleOfMove {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.more {
+  float: right;
+  color: grey;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 14px;
+}
+.more:hover {
+  color: black;
+}
+
+.CategoryName {
+  color: black;
+  text-decoration: none;
+}
+.fitem {
+  transition: all 0.3s ease-in-out;
+}
+.fitem:hover {
+  transform: scale(1.02);
+}
+a {
+  text-decoration: none;
+}

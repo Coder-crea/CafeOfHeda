@@ -1,0 +1,50 @@
+.funding-card {
+  background-color: #eff2e7; /* светло-зелёный фон */
+  border-radius: 16px;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
+  padding: 2rem;
+  text-align: center;
+  margin: 40px 20px 50px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.funding-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #263238;
+}
+
+.funding-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.fund-link {
+  color: #f75b4f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.fund-link:hover {
+  color: #e84d3e;
+}
+
+.fund-button {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.fund-button:hover {
+  background-color: #292828;
+  transform: scale(1.03);
+}

@@ -1,0 +1,205 @@
+.about-section {
+  padding: 4rem 0;
+  background-color: #f9fbfc; /* Лёгкий фон, как на других страницах */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #263238;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Основной контент */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-block {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-block h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #263238;
+}
+
+.text-block p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.text-block ul {
+  list-style: none;
+  padding-left: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.text-block li::before {
+  content: "•";
+  color: #f75b4f;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.text-block li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Блок с картинкой */
+.image-block {
+  flex: 1;
+  min-width: 300px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+.image-block:hover img {
+  transform: scale(1.03);
+}
+
+/* Кнопка меню */
+.more-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #f75b4f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.more-link:hover {
+  background-color: #e84d3e;
+  transform: scale(1.02);
+}
+
+/* Преимущества кафе */
+.features {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 1.8rem;
+  color: #263238;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: #009688;
+}
+
+.feature-card h4 {
+  font-size: 1.2rem;
+  color: #00796b;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Адаптивность */
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .text-block {
+    max-width: 100%;
+  }
+
+  .image-block {
+    width: 100%;
+  }
+}
+.features h2 {
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .features h3 {
+    font-size: 1.4rem;
+  }
+
+  .feature-card span {
+    font-size: 2rem;
+  }
+
+  .feature-card h4 {
+    font-size: 1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+
+  .text-block p,
+  .text-block li {
+    font-size: 1rem;
+  }
+}

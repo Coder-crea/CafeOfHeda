@@ -1,0 +1,56 @@
+.PreviewTextMenu {
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: rgb(150, 16, 16);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.FoodTitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.loaderText {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: rgb(255, 251, 251);
+}
+.foodDescription {
+  color: rgb(190, 186, 186);
+}
+.price {
+  font-size: 20px;
+  margin-top: 35px;
+  position: absolute;
+  bottom: 3%;
+  right: 4%;
+}
+.breakfastItem {
+  transition: all 0.3s ease-out;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.brekItem:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .PreviewTextMenu {
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bannerImage {
+    object-position: center;
+  }
+}
