@@ -9,7 +9,7 @@ const Bio = () => {
         <p>
           Реализован при финансовой поддержке{" "}
           <a
-            href="https://foresat.tilda.ws/ "
+            href="https://fasie.ru/"
             target="_blank"
             rel="noopener noreferrer"
             className="fund-link"
@@ -19,7 +19,7 @@ const Bio = () => {
           , грант по программе «Студенческий стартап».
         </p>
         <a
-          href="https://foresat.tilda.ws/ "
+          href="https://fasie.ru/"
           target="_blank"
           rel="noopener noreferrer"
           className="fund-button"
